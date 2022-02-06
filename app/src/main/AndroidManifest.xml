@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covid19vaccinereg" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_syringe"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_syringe_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Covid19VaccineReg" >
+        <activity android:name=".ViewMyVaccineRegistration" >
+        </activity>
+        <activity android:name=".MyProfile"
+            android:label="My Profile"/>
+        <activity android:name=".ViewRegisteredUserInfo"
+            android:label="User's Information"/>
+        <activity android:name=".SignUp"
+            android:label="Sign Up"/>
+        <activity android:name=".SignIn"
+            android:label = "Sign In"/>
+        <activity android:name=".WelcomeScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ConfirmRegInfo"
+            android:label="@string/confirm_registration_information" />
+        <activity
+            android:name=".CovidSymptoms"
+            android:label="@string/covid_19_symptoms" />
+        <activity
+            android:name=".Administrative_center"
+            android:label="@string/administration_centre_title" />
+        <activity
+            android:name=".Registeration_info"
+            android:label="@string/registration_form_title" />
+        <activity
+            android:name=".VaccineInfo"
+            android:label="@string/vaccine_information" />
+        <activity
+            android:name=".TakeQuiz"
+            android:label="@string/take_quiz" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ViewAccountInfoActivity"
+            android:label="User Account"/>
+        <activity android:name=".AdminHome"
+            android:label="Admin Homepage" />
+        <activity android:name=".EditNews"
+            android:label="Edit News"/>
+        <activity android:name=".ManageNews"
+            android:label="Manage News" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">Covid 19 Vaccine IRS</string>
+    <string name="how_to_prevent_the_spread_of_covid_19"><b>HOW TO PREVENT</b>\nTHE SPREAD OF COVID-19</string>
+    <string name="do_s"><b>Do\'s</b></string>
+    <string name="wear_a_mask">Wear a\n mask</string>
+    <string name="wash_hands_regularly">Wash hands\n regularly</string>
+    <string name="consult_doctor_if_you_feel_ill">Consult doctor\n if you feel\n ill</string>
+    <string name="stay_at_home_if_you_are_sick">Stay at home\n if you are\n sick</string>
+    <string name="dispose_used_tissue_properly">Dispose\n used tissue\n properly</string>
+    <string name="call_the_helpline_if_you_exhibit_any_symptoms">Call the helpline\n if you exhibit\n any symptoms</string>
+    <string name="dont_s"><b>Dont\'s</b></string>
+    <string name="avoid_crowds_and_practice_social_distancing">Avoid crowds\n and practice\n social distancing</string>
+    <string name="avoid_touching_your_face">Avoid \ntouching your face</string>
+    <string name="avoid_shaking_hands">Avoid \nshaking hands</string>
+    <string name="avoid_spitting_in_public">Avoid spitting\n in public</string>
+    <string name="take_quiz">Take Quiz</string>
+    <string name="covid_symptoms">Covid\n Symptoms</string>
+    <string name="vaccine_information">Vaccine\n Information</string>
+    <string name="administrative_centres">Administrative\n Centres</string>
+    <string name="ans_true">True</string>
+    <string name="ans_false">False</string>
+    <string name="submit">Submit</string>
+    <string name="questions_1">1. I am interested to take Covid-19 vaccine?</string>
+    <string name="questions_2">2. I will NOT have any side effects after receiving Covid-19 vaccine?</string>
+    <string name="questions_3">3. I cannot get the vaccine if I am more than 33 weeks pregnant?</string>
+    <string name="questions_4">4. It is safe for a child to receive Covid-19 vaccine</string>
+    <string name="questions_5">5. Getting vaccinate cause Autism?</string>
+    <string name="correct_ans">All your answers are correct</string>
+    <string name="incorrect_ans">Please answer all questions correctly</string>
+    <string name="ans_all_ques">Please answer all the questions before clicking submit</string>
+    <string name="manufacturer"><b>Manufacturer</b></string>
+    <string name="type_of_vaccine"><b>Type of Vaccine</b></string>
+    <string name="number_of_shots"><b>Number of Shots</b></string>
+    <string name="side_effects"><b>Side Effects</b></string>
+    <string name="effectiveness"><b>Effectiveness</b></string>
+    <string name="you_have_answered_all_the_questions_correctly_register_now">You have Answered all the questions correctly.\n Click the Register button to register now!</string>
+    <string name="success"><b>Success!!</b></string>
+    <string name="register_now">Register Now!</string>
+    <string name="back_to_home_page">Back to Home Page</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="age">Age</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="ic_passport_no">IC/Passport No.</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="state">State</string>
+    <string name="email">Email</string>
+    <string name="example_123_com">example@123.com</string>
+    <string name="physical_address">Physical Address</string>
+    <string name="enter_your_physical_address">Enter your physical address</string>
+    <string name="news_1_heading"><b>Dr Noor Hisham goes to\n the ground to administer\n Covid-19 vaccine</b></string>
+    <string name="news_2_heading"><b>New Covid-19 cases down\n slightly to 5803 on June 26,\n with 5193 recoveries</b></string>
+    <string name="news_3_heading"><b>Government studying the\n effectiveness of Covid-19\n vaccines to determine\n if booster shot\n is required</b></string>
+    <string name="news_1_website">https://www.thestar.com.my/news/nation/2021/06/26/dr-noor-hisham-goes-to-the-ground-to-administer-covid-19-vaccine</string>
+    <string name="news_2_website">https://www.theedgemarkets.com/article/malaysia-logs-5803-new-covid19-cases-june-26</string>
+    <string name="news_3_website">https://www.nst.com.my/news/nation/2021/06/702476/government-studying-effectiveness-covid-19-vaccines-determine-if-booster</string>
+
+    <string name="news_1_content">KUALA LUMPUR (Bernama): In an effort to help ensure that the process of administering the Covid-19 vaccine continues to be extended to every citizen, Health director-general Tan Sri Dr Noor Hisham Abdullah went to the ground on Saturday (June 26) to serve as a vaccinator, with a mobile vaccination team.
+
+During his working visit with Higher Education Minister Datuk Seri Dr Noraini Ahmad to the mobile vaccination programme pilot project around Parit Sulong, Batu Pahat in Johor, Dr Noor Hisham administered the vaccine to several individuals, including bedridden patients.
+"A day with our mobile team providing vaccination service to those who are housebound and bedridden patients,” he said in a post, and sharing a few photos of the visit, on his Facebook account.
+
+The pilot project is a collaboration programme involving several stakeholders, namely Hospital Canselor Tuanku Muhriz (HCTM), institute of higher learning (IPT) vaccination centre (PPV), the Covid-19 Immunisation Task Force (CITF) and the Johor health department.
+
+Dr Noor Hisham said that the project, which commenced on June 14, was an initiative by an IPT to assist the government in increasing the coverage of Covid-19 vaccination under the National Covid-19 Immunisation Programme.
+
+"Through the project, the vaccination process is implemented via three delivery methods, namely, a satellite vaccination centre at the Batu Pahat Mara Junior Science College hall for healthy individuals and a centralised vaccine outreach service.
+
+"Apart from that, house calls are also carried out for bedridden patients, the elderly or the disabled who do not have the physical ability or mental capacity to attend a PPV,” he said.
+
+He said that guidelines for the implementation of door-to-door vaccination were prepared by the Family Health Development Division of the Ministry of Health, to ensure the safety of vaccine recipients and that standard operating procedures (SOPs) were complied with.
+
+For the elderly who are bedridden, weak, unwell or suffering from a terminal illness, he said that an assessment will be carried out by a medical officer before the patient is vaccinated. - Bernama</string>
+    <string name="news_2_content">KUALA LUMPUR (June 26): Malaysia recorded 5,803 new Covid-19 cases today (June 26), down from the 5,812 infections seen yesterday.
+
+The cumulative number of cases in the country now stood at 728,462, according to a tweet by Ministry of Health (MoH) director-general Tan Sri Dr Noor Hisham Abdullah.
+
+Selangor continued to top the list with the most infections at 2,108 today.
+
+In the second place was Negeri Sembilan with 741 cases, followed by Kuala Lumpur with 628.
+
+Breaking down the new infections today, the MoH explained that 10 of them were imported, while the remaining 5,793 were domestically transmitted.
+
+The ministry added that 4,433 cases involved Malaysians, while the other 1,360 infections involved foreigners.
+
+Of the 10 imported cases, three were Malaysians, while seven were foreigners.
+
+Meanwhile, new recoveries stood at 5,193 today.
+
+The total number of recoveries now stood at 662,932, representing 91% of the total number of cases.
+
+As a result, active cases stood at 60,646, of which 866 patients were in the intensive care unit (ICU), with 435 of them requiring respiratory support.
+
+The country also saw 81 deaths today, bringing the total death toll from the coronavirus to 4,884, translating into a mortality rate of 0.67%.
+
+In a statement, Noor Hisham said the deaths reported today comprised 30 cases in Selangor, 14 in Kuala Lumpur, 12 in Johor, nine in Negeri Sembilan, five in Sarawak, and three respectively in Pahang and Melaka, two cases in Labuan, and one case each in Penang, Kedah and Terengganu.
+
+Seventy-eight of the deaths were Malaysians, while the remaining three were foreigners.
+
+Fourteen new clusters today
+Meanwhile, the Health director-general said 14 new clusters were detected today, bringing the total number of clusters to 2,755.
+
+In total, 1,887 clusters had ended, while the number of active clusters stood at 868.
+
+
+Four of the new clusters were found in Selangor, followed by Johor and Kelantan with two clusters each.
+
+Kuala Lumpur, Penang, Melaka, Sabah, Sarawak and Perak each saw a new cluster.
+
+Among them, nine were workplace clusters, followed by two detention centre clusters, two community clusters and one cluster found among high-risk groups.</string>
+    <string name="news_3_content">KUALA LUMPUR: The government is studying the effectiveness of Covid-19 vaccines against the more transmissible virus variants to determine if there is a need to issue a subsequent third as booster dose of the vaccine, to ensure the vaccinated population stay protected.
+
+Covid-19 National Immunisation Programme (NIP) coordinating minister Khairy Jamaluddin said the matter was discussed during the Special Committee on Covid-19 Vaccine Supply Access Guarantee (JKJAV) meeting on Thursday amid concerns surrounding the vaccines efficacy towards newer variants, namely Delta and Delta plus.
+
+Khairy said the authorities would continue to look at all available data to evaluate matters concerning the duration of immunity or protection provided by the vaccines currently used in Malaysia, which currently include Pfizer-BioNTech, AstraZeneca and Sinovac.
+
+"Developed nations have begun making arrangements to procure vaccine supplies to be used next year, as they have predicted the possibility of needing a third or booster shot, to ensure the vaccinated population remain protected against the original Covid virus and newer and more transmissible variants.
+
+"Therefore, we are also studying the data in detail to enable us to come up with a more informed forecast for next year. This way, we can decide whether we need to start negotiations to procure the vaccines for next year.
+
+"We need better data to determine the duration of the protection and answer questions such as how long it will last, if the immunity wanes (over time) and if it does, then at what point should we begin administering the third dose to vaccine recipients."
+
+The Minister of Science, Technology and Innovation said this at a press conference here today, after reviewing the process of administering Covid-19 vaccine to pregnant mothers at the Malaysia International Trade and Exhibition Centre (MITEC) vaccination centre (PPV).
+
+Khairy said the presence of the Delta and Delta plus variants, had particularly raised concerns over the possibility of a new wave of infections, which required the government to anticipate and prepare for the future.
+
+"Delta variant causes more than 90 per cent of new Covid cases in the United Kingdom at the moment.
+
+"Meanwhile, in Israel, which is one of the fastest countries to vaccinate the population, has re-imposed mask requirement for indoor premises, amid Covid spike and the Delta variant presence.
+
+"It is imperative that we study the vaccine effectiveness against the Delta and Delta plus variants and determine if there is a need to give a third shot and if we do, decide on which vaccine to be administered for a booster shot."
+</string>
+    <string name="click_on_location_instructions">Click on the Centres to get Location</string>
+    <string name="administration_centre_title">Administration Centres</string>
+    <string name="covid_19_symptoms">Covid-19 Symptoms</string>
+    <string-array name="vaccines">
+        <item>Pfizer</item>
+        <item>AstraZeneca</item>
+        <item>sinovac</item>
+        <item>CanSinoBIO</item>
+        <item>The Gamaleya National Center</item>
+    </string-array>
+
+    <string-array name="vaccineType">
+        <item>mRNA</item>
+        <item>Adenovirus</item>
+        <item>Inactive virus</item>
+        <item>Adenovirus</item>
+        <item>Adenovirus</item>
+    </string-array>
+
+    <string-array name="manufacturer">
+        <item>America</item>
+        <item>United Kingdom</item>
+        <item>China</item>
+        <item>China</item>
+        <item>Russia</item>
+    </string-array>
+
+    <string-array name="effective">
+        <item>95%</item>
+        <item>60%-90%</item>
+        <item>To be Announced</item>
+        <item>To be Announced</item>
+        <item>91.4%</item>
+    </string-array>
+
+    <string-array name="numberShots">
+        <item>2 shots</item>
+        <item>2 shots</item>
+        <item>2 shots</item>
+        <item>1 shot</item>
+        <item>2 shots</item>
+    </string-array>
+
+    <string-array name="sideEffectVaccine">
+        <item> Tiredness\n\nHeadache\n\nMuscle Pain\n\nChills\n\nRedness around injection site</item>
+        <item> Tiredness\n\nJoint Paint\n\nFever\n\nHeadache\n\nNausea</item>
+        <item> Tiredness\n\nDiarrhea\n\nMuscle Pain\n\nChills\n\nNausea</item>
+        <item> Fatigue\n\nHeadache\n\nMuscle Pain\n\nSlight fever\n\nPain at injection site</item>
+        <item> Flue-like illness\n\nHeadache\n\nFatigue\n\nInjection site reaction\n\nNausea</item>
+    </string-array>
+    <string-array name="states_array">
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Malacca</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengannu</item>
+    </string-array>
+
+    <string name="MCS">Fever\n\nCough\n\nTiredness</string>
+    <string name="LCS">Aches \n\nSore Throat \n\nDiarrhoea \n\nConjunctivitis \n\nHeadache \n\nLoss of taste or smell \n\nA rash on skin, or discolouration of fingers or toes</string>
+    <string name="SS">Difficulty breathing or shortness of breath \n\nChest pain or pressure \n\nLoss of speech or movement \n\nLoss of speech or movement</string>
+    <string name="less_common_symptoms">Less Common Symptoms</string>
+    <string name="most_common_symptoms">Most Common Symptoms</string>
+    <string name="call_now">Call Now</string>
+    <string name="confirm_registration_information">Confirm Registration Information</string>
+    <string name="share">Share</string>
+    <string name="registration_form_title">Registration Form</string>
+    <string name="covid19_Welcome_Title">Covid-19 Vaccine \n Information Registration System \n (IRS)</string>
+    <string name="consent_checkbox">I confirm all the information provided is true</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hint_enter_username">Enter Username</string>
+    <string name="hint_enter_password">Enter Password</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="Successful_Login">Sucess Login</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="myprofile_confirm_new_password">Confirm New Password</string>
+    <string name="myprofile_new_password">New Password</string>
+    <string name="myprofile_old_password">Old Password</string>
+    <string name="myprofile_change_password_title">Change Password</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="cancel_changes">Cancel</string>
+    <string name="myprofile_new_username">New Username</string>
+    <string name="manage_all_users">Manage All Users</string>
+    <string-array name="types_of_users_filter">
+        <item>All</item>
+        <item>Admin</item>
+        <item>Regular User</item>
+        <item>Registered</item>
+        <item>Unregistered</item>
+    </string-array>
+
+</resources>

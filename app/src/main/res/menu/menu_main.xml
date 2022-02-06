@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/sign_in"
+        android:id="@+id/signin"
+        app:showAsAction="always|withText"
+        android:orderInCategory="20" />
+
+    <item android:title="@string/sign_out"
+        android:id="@+id/signout"
+        app:showAsAction="never|withText"
+        android:orderInCategory="100"
+        />
+    <item android:title="My Profile"
+        android:id="@+id/myProfile"
+        app:showAsAction="never|withText"
+        android:orderInCategory="30"
+        />
+    <item android:title="Home"
+        android:id="@+id/Home"
+        app:showAsAction="never|withText"
+        android:orderInCategory="10"
+        />
+</menu>
+
+

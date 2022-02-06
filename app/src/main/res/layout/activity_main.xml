@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@drawable/background_image_admin_home"
+        tools:context=".MainActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvActionables"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivTake_Quiz"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="8dp"
+                            android:onClick="launchTakeQuiz"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/quiz_clipboard" />
+
+                        <TextView
+                            android:id="@+id/tvTakeQuiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/take_quiz"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/ivTake_Quiz"
+                            app:layout_constraintStart_toStartOf="@+id/ivTake_Quiz"
+                            app:layout_constraintTop_toBottomOf="@+id/ivTake_Quiz" />
+
+                        <ImageView
+                            android:id="@+id/ivViewCovidSymptoms"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginLeft="32dp"
+                            android:onClick="launchCovidSymptoms"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivTake_Quiz"
+                            app:layout_constraintStart_toEndOf="@+id/ivTake_Quiz"
+                            app:layout_constraintTop_toTopOf="@+id/ivTake_Quiz"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/symptoms" />
+
+                        <ImageView
+                            android:id="@+id/ivVaccineInfo"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginRight="32dp"
+                            android:onClick="launchCovidInfo"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivViewCovidSymptoms"
+                            app:layout_constraintEnd_toStartOf="@+id/ivAdministrativeCentres"
+                            app:layout_constraintTop_toTopOf="@+id/ivViewCovidSymptoms"
+                            app:srcCompat="@drawable/vaccineinfo" />
+
+                        <TextView
+                            android:id="@+id/tvViewCovidSymptoms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/covid_symptoms"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/ivViewCovidSymptoms"
+                            app:layout_constraintStart_toStartOf="@+id/ivViewCovidSymptoms"
+                            app:layout_constraintTop_toBottomOf="@+id/ivViewCovidSymptoms" />
+
+                        <TextView
+                            android:id="@+id/tvVaccineInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/vaccine_information"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/ivVaccineInfo"
+                            app:layout_constraintStart_toStartOf="@+id/ivVaccineInfo"
+                            app:layout_constraintTop_toBottomOf="@+id/ivVaccineInfo" />
+
+                        <ImageView
+                            android:id="@+id/ivAdministrativeCentres"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:onClick="launchAdministrativeCentre"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivVaccineInfo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/ivVaccineInfo"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:srcCompat="@drawable/administration_icon" />
+
+                        <TextView
+                            android:id="@+id/tvAdministrativeCentres"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/administrative_centres"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/ivAdministrativeCentres"
+                            app:layout_constraintHorizontal_bias="0.68"
+                            app:layout_constraintStart_toStartOf="@+id/ivAdministrativeCentres"
+                            app:layout_constraintTop_toBottomOf="@+id/ivAdministrativeCentres" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvDosAndDonts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvActionables">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivVirus"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="30dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/virus" />
+
+                        <TextView
+                            android:id="@+id/preventingCovTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="30dp"
+                            android:text="@string/how_to_prevent_the_spread_of_covid_19"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toStartOf="@+id/BtnExpandDosAndDonts"
+                            app:layout_constraintHorizontal_bias="0.48"
+                            app:layout_constraintStart_toEndOf="@id/ivVirus"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/BtnExpandDosAndDonts"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/ic_keyboard_name_arrow_down_black_24dp"
+                            android:padding="30dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/preventingCovTextView"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/preventingCovTextView" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/expandDosAndDonts"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/preventingCovTextView">
+
+                            <ImageView
+                                android:id="@+id/DoImageView"
+                                android:layout_width="45dp"
+                                android:layout_height="39dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/do_s" />
+
+                            <TextView
+                                android:id="@+id/dosTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="@string/do_s"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/DoImageView"
+                                app:layout_constraintStart_toEndOf="@+id/DoImageView"
+                                app:layout_constraintTop_toTopOf="@+id/DoImageView" />
+
+                            <ImageView
+                                android:id="@+id/ivWearMaks"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/DoImageView"
+                                app:srcCompat="@drawable/wear_mask_actual" />
+
+                            <TextView
+                                android:id="@+id/tvWearMask"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/wear_a_mask"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivWearMaks"
+                                app:layout_constraintStart_toStartOf="@+id/ivWearMaks"
+                                app:layout_constraintTop_toBottomOf="@+id/ivWearMaks" />
+
+                            <ImageView
+                                android:id="@+id/ivWashHands"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="80dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="80dp"
+                                android:layout_marginRight="80dp"
+                                app:layout_constraintEnd_toStartOf="@+id/ivConsultDoctor"
+                                app:layout_constraintStart_toEndOf="@+id/ivWearMaks"
+                                app:layout_constraintTop_toBottomOf="@+id/DoImageView"
+                                app:srcCompat="@drawable/washhands" />
+
+                            <TextView
+                                android:id="@+id/tvWashHands"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/wash_hands_regularly"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivWashHands"
+                                app:layout_constraintStart_toStartOf="@+id/ivWashHands"
+                                app:layout_constraintTop_toBottomOf="@+id/ivWashHands" />
+
+                            <ImageView
+                                android:id="@+id/ivConsultDoctor"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/DoImageView"
+                                app:srcCompat="@drawable/consult_doc" />
+
+                            <TextView
+                                android:id="@+id/tvConsultDoc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/consult_doctor_if_you_feel_ill"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivConsultDoctor"
+                                app:layout_constraintStart_toStartOf="@+id/ivConsultDoctor"
+                                app:layout_constraintTop_toBottomOf="@+id/ivConsultDoctor" />
+
+                            <ImageView
+                                android:id="@+id/ivSleepIfUnwell"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintStart_toStartOf="@+id/ivWearMaks"
+                                app:layout_constraintTop_toBottomOf="@+id/tvWearMask"
+                                app:srcCompat="@drawable/stay_home_sick" />
+
+                            <TextView
+                                android:id="@+id/tvStayHome"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/stay_at_home_if_you_are_sick"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivSleepIfUnwell"
+                                app:layout_constraintStart_toStartOf="@+id/ivSleepIfUnwell"
+                                app:layout_constraintTop_toBottomOf="@+id/ivSleepIfUnwell" />
+
+                            <ImageView
+                                android:id="@+id/ivDisposeTissue"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="80dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginEnd="80dp"
+                                android:layout_marginRight="80dp"
+                                app:layout_constraintEnd_toStartOf="@+id/ivCallHelpline"
+                                app:layout_constraintStart_toEndOf="@+id/ivSleepIfUnwell"
+                                app:layout_constraintTop_toTopOf="@+id/ivSleepIfUnwell"
+                                app:srcCompat="@drawable/throw_used_tissue" />
+
+                            <TextView
+                                android:id="@+id/tvThrowUsedTissue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/dispose_used_tissue_properly"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivDisposeTissue"
+                                app:layout_constraintStart_toStartOf="@+id/ivDisposeTissue"
+                                app:layout_constraintTop_toBottomOf="@+id/ivDisposeTissue" />
+
+                            <ImageView
+                                android:id="@+id/ivCallHelpline"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                android:onClick="LaunchCallDialog"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/ivDisposeTissue"
+                                app:srcCompat="@drawable/call_if_symp" />
+
+                            <TextView
+                                android:id="@+id/tvCallHelpline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/call_the_helpline_if_you_exhibit_any_symptoms"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivCallHelpline"
+                                app:layout_constraintStart_toStartOf="@+id/ivCallHelpline"
+                                app:layout_constraintTop_toBottomOf="@+id/ivCallHelpline" />
+
+                            <ImageView
+                                android:id="@+id/ivDonts"
+                                android:layout_width="45dp"
+                                android:layout_height="39dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvCallHelpline"
+                                app:srcCompat="@drawable/dont_s" />
+
+                            <TextView
+                                android:id="@+id/tvDonts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center"
+                                android:text="@string/dont_s"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/ivDonts"
+                                app:layout_constraintStart_toEndOf="@+id/ivDonts"
+                                app:layout_constraintTop_toTopOf="@+id/ivDonts" />
+
+                            <ImageView
+                                android:id="@+id/ivAvoidCrowds"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ivDonts"
+                                app:srcCompat="@drawable/avoid_crowds" />
+
+                            <TextView
+                                android:id="@+id/tvAvoidCrowds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/avoid_crowds_and_practice_social_distancing"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivAvoidCrowds"
+                                app:layout_constraintStart_toStartOf="@+id/ivAvoidCrowds"
+                                app:layout_constraintTop_toBottomOf="@+id/ivAvoidCrowds" />
+
+                            <ImageView
+                                android:id="@+id/ivAvoidTouchingFace"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginStart="80dp"
+                                android:layout_marginLeft="80dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="80dp"
+                                android:layout_marginRight="80dp"
+                                app:layout_constraintEnd_toStartOf="@+id/ivAvoidSpitPublic"
+                                app:layout_constraintStart_toEndOf="@+id/ivAvoidCrowds"
+                                app:layout_constraintTop_toBottomOf="@+id/ivDonts"
+                                app:srcCompat="@drawable/avoid_touching_face" />
+
+                            <TextView
+                                android:id="@+id/tvAvoidTouchFace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/avoid_touching_your_face"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivAvoidTouchingFace"
+                                app:layout_constraintStart_toStartOf="@+id/ivAvoidTouchingFace"
+                                app:layout_constraintTop_toBottomOf="@+id/ivAvoidTouchingFace" />
+
+                            <ImageView
+                                android:id="@+id/ivAvoidShakingHands"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintEnd_toStartOf="@+id/ivAvoidSpitPublic"
+                                app:layout_constraintStart_toEndOf="@+id/ivAvoidCrowds"
+                                app:layout_constraintTop_toBottomOf="@+id/tvAvoidTouchFace"
+                                app:srcCompat="@drawable/no_shake_hands" />
+
+                            <TextView
+                                android:id="@+id/tvAvoidShakeHands"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/avoid_shaking_hands"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivAvoidShakingHands"
+                                app:layout_constraintStart_toStartOf="@+id/ivAvoidShakingHands"
+                                app:layout_constraintTop_toBottomOf="@+id/ivAvoidShakingHands" />
+
+                            <ImageView
+                                android:id="@+id/ivAvoidSpitPublic"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginRight="20dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/ivDonts"
+                                app:srcCompat="@drawable/no_spit_public" />
+
+                            <TextView
+                                android:id="@+id/tvAvoidSpitPublic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:text="@string/avoid_spitting_in_public"
+                                android:textColor="@color/black"
+                                app:layout_constraintEnd_toEndOf="@+id/ivAvoidSpitPublic"
+                                app:layout_constraintStart_toStartOf="@+id/ivAvoidSpitPublic"
+                                app:layout_constraintTop_toBottomOf="@+id/ivAvoidSpitPublic" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCovidVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvDosAndDonts">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivCovidVideo"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/covid_video_pic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="left"
+                            android:text="Harian Metro Video"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivCovidVideo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/ivCovidVideo"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnExpanCovidVideo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="60dp"
+                            android:background="@drawable/ic_keyboard_name_arrow_down_black_24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/expandNewsVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/ivCovidVideo">
+
+                            <VideoView
+                                android:id="@+id/vvNews"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                app:layout_constraintStart_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvViewNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cvCovidVideo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
